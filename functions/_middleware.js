@@ -22,7 +22,7 @@ export async function onRequest(context) {
   const profile = fetchProfile(username);
   const lbRank = profile.allTimeLbs.time[60].english;
 
-  const age =Math.floor(Date.now()- profile.addedAt / (1000 * 60 * 60 * 24));
+  const age =Math.floor((Date.now()- profile.addedAt )/ (1000 * 60 * 60 * 24));
   const timeTyping = Math.round(profile.typingStats.timeTyping/60/60);
 
   const title = `${profile.name}'s profile on monkeytype.com`;
