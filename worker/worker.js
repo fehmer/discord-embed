@@ -39,7 +39,7 @@ class ContentHandler {
       .on('meta[property="og:title"]', new ContentHandler(title))
       .on('meta[name="twitter:title"]', new ContentHandler(title))
       .on('meta[property="og:image"]', new ContentHandler(image))
-      .on('meta[name="twitter:image"]', new ContentHandler(image))
+      .on('meta[name="twitter:image:src"]', new ContentHandler(image))
       .on('meta[name="profilePrefetch"]', new ContentHandler(JSON.stringify(profile)))
       .transform(response);
   }
