@@ -13,10 +13,23 @@
     <meta property="og:image" content="https://monkeytype.com/images/mtsocial.png" />
     <meta name="twitter:title" content="Monkeytype | A minimalistic, customizable typing test" />
     <meta name="twitter:image" content="https://monkeytype.com/images/mtsocial.png" />
+    <meta name="profilePrefetch" content="">
 </head>
 
 <body>
-    test
+    <div id="content">no profile</div>
 </body>
+
+<script defer>
+    const profilePrefetch = document.querySelector('meta[name="profilePrefetch"]').getAttribute("content");
+    if (profilePrefetch !== "") {
+        const content = document.getElementById("content");
+        const profile = JSON.parse(profilePrefetch);
+
+        content.innerText = `Hello ${profile.name}!`;
+
+    }
+
+</script>
 
 </html>
