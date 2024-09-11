@@ -32,7 +32,7 @@ class ContentHandler {
       profile.personalBests.time[60][0].wpm
     }wpm, faster then ${Math.round(100 - (lbRank.rank / lbRank.count) * 100)}%. Joined ${age} days ago. Currently on a ${profile.streak} day streak.`;
     //const image = `https://cdn.discordapp.com/avatars/${profile.discordId}/${profile.discordAvatar}.png?size=256`;
-    const image = `https://profiles.knutfischer.com/api/generated.png`;
+    const image = `https://profiles.knutfischer.com/api/${username}.png`;
   
     return new HTMLRewriter()
       .on('meta[property="og:description"]', new ContentHandler(description))
