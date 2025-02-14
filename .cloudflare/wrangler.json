@@ -1,0 +1,12 @@
+{
+    "name": "discord-embed",
+    "main": "./workers/profile.js",
+    "compatibility_date": "2022-04-05",
+    "workers_dev": false,
+    "route": {
+        "zone_name": "knutfischer.com",
+        "pattern": "profiles.knutfischer.com/profile/.*" 
+    }
+
+
+}
