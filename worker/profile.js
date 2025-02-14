@@ -21,7 +21,7 @@ async function handleRequest(request) {
 
   let rewriter = new HTMLRewriter();
   if (!isUid) {
-    const title = `${nameOrUid}'s profile on monkeytype.com`;
+    const title = `Check out ${nameOrUid}'s profile on monkeytype.com`;
     rewriter = rewriter
       .on('meta[property="og:title"]', new ContentHandler(title))
       .on('meta[name="twitter:title"]', new ContentHandler(title));
