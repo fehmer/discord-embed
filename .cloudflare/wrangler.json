@@ -1,6 +1,6 @@
 {
     "name": "discord-embed-worker",
-    "main": "./worker/profile.js",
+    "main": "./workers/profile.js",
     "compatibility_date": "2022-04-05",
     "workers_dev": false,
     "route": {
